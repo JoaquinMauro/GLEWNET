@@ -1,0 +1,41 @@
+@import "_dark-red-css-theme";
+@import "_darkredwoocommerce";
+
+
+//index
+img.wp-smiley,
+img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+.recentcomments a{
+    display:inline !important;
+    padding:0 !important;
+    margin:0 !important;
+}
+
+.steramers{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 3rem;
+    
+    img{
+        width: 50%;
+        transition: 200ms;
+        padding-top: 2rem;
+    }
+}
+.steramers img:hover{   
+        transform: scale(1.2);
+        transition: 200ms;    
+}
