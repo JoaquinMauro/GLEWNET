@@ -24,7 +24,7 @@
 <body class="home page page-id-30 page-template-default tm-isblog wp-front_page wp-page wp-page-30 ">
         
 <!--navbar-->        
-    <div class="tm-headerbar uk-clearfix tm-navbar-fixed">
+    <div class="tm-headerbar uk-clearfix tm-navbar-fixed uk-navbar-sticky">
         <div class="uk-container uk-container-center">                                                                         
             <div class="uk-navbar-nav uk-navbar-flip uk-hidden-small">
                 <ul class="uk-navbar-nav uk-hidden-small">
@@ -45,30 +45,30 @@
     <section class="formulario p-3">    
         <div class="row justify-content-center">
             <div class="col-xl-6 col-lg-6 col-xs-12">
-                <form action="GET" class="form">
+                <form action="../contacto.php" method="post" class="form">
                     <div class="form-group">
                         <label for="nombre">Nombre y Apellido</label>
-                        <input type="text" id="nombre" placeholder="Nombre Completo" class="form-control">       
+                        <input type="text" id="nombre" placeholder="Nombre y Apellido" class="form-control" name="nombre">       
                     </div>
                     <div class="form-group">
                         <label for="zona">Zona</label>
-                        <input type="text" id="zona" placeholder="Zona" class="form-control">
+                        <input type="text" id="zona" placeholder="Zona" class="form-control" name="zona">
                     </div>
                     <div class="form-group">
                         <label for="domicilio">Domicilio</label>
-                        <input type="text" id="domicilio" placeholder="Domicilio" class="form-control">
+                        <input type="text" id="domicilio" placeholder="Domicilio" class="form-control" name="domicilio">
                     </div>
                     <div class="form-group">
                         <label for="telefono">Teléfono de Contacto</label>
-                        <input type="number" id="telefono" placeholder="xxxx-xxxx" required class="form-control">
+                        <input type="number" id="telefono" placeholder="xxxx-xxxx" class="form-control" name="telefono">
                     </div>
                     <div class="form-group">
                         <label for="documento">N° De Documento</label>
-                        <input type="number" id="documento" placeholder="xx.xxx.xxx" required class="form-control">
+                        <input type="number" id="documento" placeholder="xx.xxx.xxx" class="form-control" name="documento">
                     </div>
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="email" id="email" placeholder="ejemplo@glewnet.com" required class="form-control">
+                        <input type="email" id="email" placeholder="ejemplo@glewnet.com" class="form-control" name="email">
                     </div>
                                
                     <div class="form-group">
@@ -81,16 +81,14 @@
 
                     <div class="form-group">
                         <p >Consulta:</p>
-                        <textarea  class="form-control" name="consulta" id="consulta" cols="40" rows="3" placeholder="Escribinos tu consulta y te contestaremos a la brevedad"></textarea>
+                        <textarea class="form-control" name="consulta" id="consulta" cols="40" rows="3" placeholder="Escribinos tu consulta y te contestaremos a la brevedad"></textarea>
                     </div>          
                 
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
-                        Enviar
-                    </button>
+                    <input class="btn btn-success" name="enviar" type="submit" value="Enviar"/>
                     
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -107,7 +105,7 @@
                             </div>
                         </div>
                         </div>
-                    </div>
+                    </div> -->
                 </form>
             </div>
         </div>    

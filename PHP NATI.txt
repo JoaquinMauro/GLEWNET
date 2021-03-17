@@ -1,0 +1,31 @@
+ $headers  = "MIME-Version: 1.0\n";
+        $headers .= "Content-type: text/html; charset=utf-8\n";
+        $headers .= "X-Priority: 3\n";
+        $headers .= "X-MSMail-Priority: Normal\n";
+        $headers .= "X-Mailer: php\n";
+        $headers .= "From: \"".$de." \" <".$email.">\n";
+
+<?php 
+$destino = "tumail";
+if(isset($_POST['msg'])){
+        // $name = $_POST['nombre'];
+        // $asunto = $_POST['asunto'];
+        // $remitente = $_POST['email'];
+        // $msg = $_POST['msg'];
+        $de=$_POST['nombre'];
+        $sobre=$_POST['asunto'];
+        $email= $_POST['email'];
+        $mensaje=$_POST['msg'];
+        $cuerpo = $de;
+        $cuerpo .= $email;
+        $cuerpo .= $sobre;
+        $cuerpo .= $mensaje;
+        $headers  = "MIME-Version: 1.0\n";
+        $headers .= "Content-type: text/html; charset=utf-8\n";
+        $headers .= "X-Priority: 3\n";
+        $headers .= "X-MSMail-Priority: Normal\n";
+        $headers .= "X-Mailer: php\n";
+        $headers .= "From: \"".$de." \" <".$email.">\n";
+        mail($destino, $asunto, $cuerpo, $headers);
+    };
+?>

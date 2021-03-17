@@ -13211,6 +13211,11 @@ p.demo_store {
 .woocommerce-page input[type="color"] {
   font-weight: lighter; }
 
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
 img.wp-smiley,
 img.emoji {
   display: inline !important;
@@ -13240,5 +13245,9 @@ img.emoji {
     padding-top: 2rem; }
 
 .steramers img:hover {
+  transform: scale(1.2);
+  transition: 200ms; }
+
+.whatsapp img:hover {
   transform: scale(1.2);
   transition: 200ms; }

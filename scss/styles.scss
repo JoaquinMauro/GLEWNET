@@ -1,7 +1,11 @@
 @import "_dark-red-css-theme";
 @import "_darkredwoocommerce";
 
-
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 //index
 img.wp-smiley,
 img.emoji {
@@ -38,4 +42,8 @@ img.emoji {
 .steramers img:hover{   
         transform: scale(1.2);
         transition: 200ms;    
+}
+.whatsapp img:hover{   
+    transform: scale(1.2);
+    transition: 200ms;    
 }
