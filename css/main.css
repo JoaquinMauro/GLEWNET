@@ -13233,18 +13233,18 @@ img.emoji {
   padding: 0 !important;
   margin: 0 !important; }
 
-.steramers {
+.streamers {
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   padding: 3rem; }
-  .steramers img {
-    width: 50%;
+  .streamers img {
+    width: 25%;
     transition: 200ms;
-    padding-top: 2rem; }
+    margin: 2rem 2rem; }
 
-.steramers img:hover {
+.streamers img:hover {
   transform: scale(1.2);
   transition: 200ms; }
 

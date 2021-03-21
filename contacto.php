@@ -1,4 +1,5 @@
 <?php
+
     $nombre = $_POST['nombre'];
     $zona = $_POST['zona'];
     $domicilio = $_POST['domicilio'];
@@ -6,7 +7,7 @@
     $documento = $_POST['documento'];
     $email = $_POST['email'];
     $from = $_POST['nombre'];
-    $to = "joaquin.gomez89@gmail.com";
+    $to = "glewnet.servicio@gmail.com";
     $consulta = $_POST['consulta']; 
     $subject = "Nueva consulta de usuario";
 
@@ -17,22 +18,20 @@
     $headers .= "X-Mailer: php\n";
     $headers .= "From: \"".$nombre." \" <".$email.">\n";
 
-    mail($to, $subject, $consulta, $headers);
+    $message = "Este mensaje fue enviado por: " . $nombre . " \r\n";
+    
+    $message .= "Reside en: " . $domicilio . "," . $zona . " \r\n";
+    $message .= "Su e-mail es: " . $email . " \r\n";
+    $message .= "Teléfono de contacto: " . $telefono . " \r\n";
+    $message .= "Mensaje: " . $_POST['consulta'] . " \r\n";
+    $para = 'glewnet.servicio@gmail.com';
+    $asunto = 'Nueva consulta de usuario';
 
-    $cuerpo = "Nombre: " . $nombre;
-    $cuerpo.= "Zona: " . $zona;
-    $cuerpo.= "Domicilio: " . $domicilio;
-    $cuerpo.= "Documento: " . $documento;
-    $cuerpo.= "Email " . $email; 
-    $cuerpo.= "Consulta: " . $consulta;
+    mail( $para, $asunto, $message, $header);
+    echo "$para <br>,$asunto, <br> $message, <br> $header";
+    
+    header("Location: http://glewnet.com.ar/pages/contacto.html");
+exit();
 
-
-    // echo $subject;
-    // echo "<p>Ha llegado una nueva consulta</p>";
-    // echo $nombre "tiene una consulta sobre el servicio \n";
-    // echo "Sus datos son los siguientes:\n";
-    // echo "Telefono: " . $telefono "\n";
-    // echo "Reside en" . $domicilio . "en la zona de " . $zona "\n";
-    // echo "Sus puntos de contacto son: " . $telefono . " " . $email"\n";
-    // echo "Su dni es" . $documento; 
-// ?>
+    
+?>
