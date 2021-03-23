@@ -13251,3 +13251,64 @@ img.emoji {
 .whatsapp img:hover {
   transform: scale(1.2);
   transition: 200ms; }
+
+.planes {
+  background-image: #7F0000;
+  background-image: radial-gradient(#2F0101, #7F0000);
+  background-image: -webkit-radial-gradient(#2F0101, #7F0000); }
+
+/*cards*/
+.fotosCards {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  background-attachment: fixed;
+  border-radius: 15px;
+  padding: 0rem 5rem 0rem 5rem; }
+  .fotosCards img {
+    max-width: 100%; }
+  .fotosCards h3 {
+    flex: 0 1 100%;
+    margin: 0; }
+
+.guitarras p {
+  padding: 0rem 1rem 0rem 1rem;
+  font-size: 20px; }
+
+.modelo {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding-bottom: 1rem; }
+  .modelo p {
+    line-height: 1.8rem;
+    margin: 0;
+    text-align: left; }
+
+.modelo figure:hover img {
+  transform: scale(1.3) rotate(10deg);
+  filter: blur(2px); }
+
+.modelo figure {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+  .modelo figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out; }
+  .modelo figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    text-align: center; }
+    .modelo figure .capa h3 {
+      font-size: 30px;
+      font-weight: 400;
+      padding-top: 60px;
+      transition: all 500ms ease-out; }
+
+.modelo figure:hover > .capa {
+  opacity: 1;
+  visibility: visible; }
