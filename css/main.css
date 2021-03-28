@@ -9794,11 +9794,6 @@ a.uk-thumbnail:focus {
 .tm-teaser h6 {
   color: #ffffff; }
 
-.tm-teaser {
-  background-image: #7F0000;
-  background-image: radial-gradient(#2F0101, #7F0000);
-  background-image: -webkit-radial-gradient(#2F0101, #7F0000); }
-
 .tm-headerbar {
   background-image: #2d252c;
   background-image: radial-gradient(#493c47, #2d252c);
@@ -13233,6 +13228,12 @@ img.emoji {
   padding: 0 !important;
   margin: 0 !important; }
 
+.tm-teaser {
+  background-image: url(../images/familia.jpg); }
+  .tm-teaser img {
+    position: absolute;
+    margin: 0 auto; }
+
 .streamers {
   display: block;
   margin-left: auto;
@@ -13258,44 +13259,31 @@ img.emoji {
   background-image: -webkit-radial-gradient(#2F0101, #7F0000); }
 
 /*cards*/
-.fotosCards {
-  margin: 0 auto;
-  margin-bottom: 2rem;
-  background-attachment: fixed;
-  border-radius: 15px;
-  padding: 0rem 5rem 0rem 5rem; }
-  .fotosCards img {
-    max-width: 100%; }
-  .fotosCards h3 {
-    flex: 0 1 100%;
-    margin: 0; }
-
-.guitarras p {
-  padding: 0rem 1rem 0rem 1rem;
-  font-size: 20px; }
-
-.modelo {
+.plan {
   margin-bottom: 2rem;
   margin-top: 2rem;
-  padding-bottom: 1rem; }
-  .modelo p {
+  padding-bottom: 1rem;
+  border-radius: 15px;
+  height: auto; }
+  .plan p {
     line-height: 1.8rem;
     margin: 0;
     text-align: left; }
 
-.modelo figure:hover img {
+.plan figure:hover img {
   transform: scale(1.3) rotate(10deg);
   filter: blur(2px); }
 
-.modelo figure {
+.plan figure {
   position: relative;
   overflow: hidden;
-  cursor: pointer; }
-  .modelo figure img {
+  cursor: pointer;
+  border-radius: 15px; }
+  .plan figure img {
     width: 100%;
     height: 100%;
     transition: all 500ms ease-out; }
-  .modelo figure .capa {
+  .plan figure .capa {
     position: absolute;
     top: 0;
     width: 100%;
@@ -13303,12 +13291,14 @@ img.emoji {
     transition: all 500ms ease-out;
     opacity: 0;
     text-align: center; }
-    .modelo figure .capa h3 {
+    .plan figure .capa h3 {
+      margin-top: 30%;
+      text-shadow: 25px 15px 25px black;
+      color: white;
       font-size: 30px;
       font-weight: 400;
-      padding-top: 60px;
       transition: all 500ms ease-out; }
 
-.modelo figure:hover > .capa {
+.plan figure:hover > .capa {
   opacity: 1;
   visibility: visible; }
