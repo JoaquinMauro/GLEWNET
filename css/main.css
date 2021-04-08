@@ -13229,10 +13229,23 @@ img.emoji {
   margin: 0 !important; }
 
 .tm-teaser {
-  background-image: url(../images/familia.jpg); }
-  .tm-teaser img {
-    position: absolute;
-    margin: 0 auto; }
+  background-image: url(../images/familia.jpg);
+  width: 100%; }
+
+.logo {
+  height: 300px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  transition: 200ms; }
+
+.logo:hover {
+  transition: 200ms;
+  backdrop-filter: blur(3px) grayscale(30%); }
+
+#logoGris:hover {
+  transform: scale(1.1);
+  transition: 200ms; }
 
 .streamers {
   display: block;
