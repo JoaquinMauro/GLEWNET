@@ -1,0 +1,9 @@
+{
+    "files.autoSave": "afterDelay",
+    "sync.syncExtensions": true,
+    "sync.gist": "https://github.com/JoaquinMauro",
+    "sync.forceUpload": true,
+    "sync.autoUpload": true,
+    "sync.forceDownload": true,
+    "terminal.integrated.tabs.showActiveTerminal": "always"
+}
