@@ -51,7 +51,7 @@
     <section class="formulario p-3">    
         <div class="row justify-content-center">
             <div class="col-xl-6 col-lg-6 col-xs-12">
-                <form action="../contacto.php" method="post" class="form">
+                <form action="../contacto.php" method="post" class="form" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="nombre">Nombre y Apellido</label>
                         <input type="text" id="nombre" placeholder="Nombre y Apellido" class="form-control" name="nombre">       
@@ -89,9 +89,13 @@
                         <p >Consulta:</p>
                         <textarea class="form-control" name="consulta" id="consulta" cols="40" rows="3" placeholder="Escribinos tu consulta y te contestaremos a la brevedad"></textarea>
                     </div>          
+
+                    <div class="form-group">
+                        <label for="linkedin"><strong> ¿Queres trabajar con nosotros? Dejanos tu Linkedin!</strong></label>
+                        <input type="text" id="linkedin" class="form-control" name="linkedin">
+                    </div>
                 
-                    <!-- Button trigger modal -->
-                    
+                    <!-- Button trigger modal -->                    
                     <button class="btn btn-success" name="enviar" type="submit" value="Enviar">Enviar</button>
                     <!-- Modal -->
                     <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

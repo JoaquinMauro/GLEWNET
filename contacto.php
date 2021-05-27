@@ -10,6 +10,7 @@
     $to = "glewnet.servicio@gmail.com";
     $consulta = $_POST['consulta']; 
     $subject = "Nueva consulta de usuario";
+    $linkedin = $_POST['linkedin'];
 
     $headers  = "MIME-Version: 1.0\n";
     $headers .= "Content-type: text/html; charset=utf-8\n";
@@ -24,6 +25,7 @@
     $message .= "Su e-mail es: " . $email . " \r\n";
     $message .= "Teléfono de contacto: " . $telefono . " \r\n";
     $message .= "Mensaje: " . $_POST['consulta'] . " \r\n";
+    $message .= "Su enlace a Linkedin es: " . $_POST['linkedin'] . " \r\n";
     $para = 'glewnet.servicio@gmail.com';
     $asunto = 'Nueva consulta de usuario';
 
